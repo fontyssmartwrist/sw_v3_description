@@ -26,5 +26,6 @@ Install guide
 Authors
 =====================================================================
 Aike van Alkemade 
+
 Salah El Hajj Hassan
 
