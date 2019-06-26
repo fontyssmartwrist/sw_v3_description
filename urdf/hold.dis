@@ -1,0 +1,193 @@
+  <link name="world"/>
+
+  <joint name="joint0" type="fixed">
+    <parent link="world"/>
+    <child link="link1"/>
+  </joint>
+
+  <!-- assem1 -->
+  <link name="link1">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem1.STL"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem1.STL"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+
+    <inertial>
+      <origin xyz="-0.0046135 -0.00012186 0.096013" rpy="0 0 0"/>
+      <mass value="5.7694"/>
+      <inertia 
+        ixx="0.016279"
+        ixy="-2.9241E-06"
+        ixz="-0.00019498"
+        iyy="0.01308"
+        iyz="-1.4038E-05"
+        izz="0.0053116"
+	    />
+    </inertial>
+  </link>
+
+  <joint name="joint1" type="continuous">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.2"/>
+  </joint>
+
+  <!-- assem2 -->
+  <link name="link2">
+    <collision>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem2.STL"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem2.STL"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+
+    <inertial>
+      <origin xyz= "-0.002448 0.0061877 0.25206" rpy= "0 0 0"/>
+      <mass value="1.2912"/>
+      <inertia 
+        ixx="0.00050926"
+        ixy="2.3182E-05"
+        ixz="5.5414E-05"
+        iyy="0.00045458"
+        iyz="-0.00014037"
+        izz="7.6348E-05"
+	    />
+      </inertial>
+  </link>
+
+  <joint name="joint2" type="continuous">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0.12941 0.22414 0.96593"/>
+    <dynamics damping="0.2"/>
+  </joint>
+
+  <!-- assem3 -->
+  <link name="link3">
+    <collision>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem3.STL"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem3.STL"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+
+    <inertial>
+      <origin xyz= "0.040734 0.037687 0.18694" rpy= "0 0 0"/>
+      <mass value="6.5273"/>
+      <inertia 
+        ixx="0.020545"
+        ixy="-0.0025461"
+        ixz="-0.0054607"
+        iyy="0.023538"
+        iyz="-0.0063656"
+        izz="0.01031"
+	    />
+      </inertial>
+  </link>
+
+  <joint name="joint3" type="continuous">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.2"/>
+  </joint>
+
+  <!-- assem4 -->
+  <link name="link4">
+    <collision>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem4.STL"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem4.STL"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+
+    <inertial>
+      <origin xyz= "-0.032134 -0.061684 0.28225" rpy= "0 0 0"/>
+      <mass value="1.2912"/>
+      <inertia 
+        ixx="0.00049237"
+        ixy="-4.7209E-06"
+        ixz="-7.3968E-05"
+        iyy="0.00051286"
+        iyz="1.961E-05"
+        izz="3.4951E-05"
+	    />
+      </inertial>
+  </link>
+
+  <joint name="joint4" type="continuous">
+    <parent link="link4"/>
+    <child link="link5"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.2"/>
+  </joint>
+
+  <!-- assem5 -->
+  <link name="link5">
+    <collision>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem5.STL"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz= "0 0 0" rpy= "0 0 0"/>
+      <geometry>
+	      <mesh filename="package://sw_v3_description/meshes/assem5.STL"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+
+    <inertial>
+      <origin xyz= "0.0050589 0.0088202 0.10635" rpy= "0 0 0"/>
+      <mass value="1.3274"/>
+      <inertia 
+        ixx="0.00043296"
+        ixy="-9.8408E-05"
+        ixz="-0.00010411"
+        iyy="0.00031409"
+        iyz="-0.00018417"
+        izz="0.00023001"
+	    />
+      </inertial>
+  </link>
